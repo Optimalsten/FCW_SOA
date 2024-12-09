@@ -1,0 +1,55 @@
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ cat > Pets.txt
+Собаки
+Кошки
+Хомяки
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ cat Pets.txt
+Собаки
+Кошки
+Хомяки
+fcw@fcw-ubuntu:~$ cat > PackAnimals.txt
+Лошади
+Верблюды
+Ослы
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ cat PackAnimals.txt
+Лошади
+Верблюды
+Ослы
+fcw@fcw-ubuntu:~$ cat Pets.txt PackAnimals.txt > HumanFriends.txt
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  HumanFriends.txt  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ cat HumanFriends
+cat: HumanFriends: No such file or directory
+fcw@fcw-ubuntu:~$ cat HumanFriends.txt
+Собаки
+Кошки
+Хомяки
+Лошади
+Верблюды
+Ослы
+fcw@fcw-ubuntu:~$ mv HumanFriens.txt HumanFriens_new
+mv: cannot stat 'HumanFriens.txt': No such file or directory
+fcw@fcw-ubuntu:~$ mv HumanFriends.txt HumanFriends_new
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  HumanFriends_new  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ mv HumanFriends-new HumanFriends.txt
+mv: cannot stat 'HumanFriends-new': No such file or directory
+fcw@fcw-ubuntu:~$ mv HumanFriends_new HumanFriends.txt
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  HumanFriends.txt  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ clear
+fcw@fcw-ubuntu:~$ mkdir Final_Control_Work
+fcw@fcw-ubuntu:~$ ls
+Desktop    Downloads           HumanFriends.txt  PackAnimals.txt  Pictures  snap       Videos
+Documents  Final_Control_Work  Music             Pets.txt         Public    Templates
+fcw@fcw-ubuntu:~$ mv HumanFriends.txt Final_Control_Work/
+fcw@fcw-ubuntu:~$ ls
+Desktop  Documents  Downloads  Final_Control_Work  Music  PackAnimals.txt  Pets.txt  Pictures  Public  snap  Templates  Videos
+fcw@fcw-ubuntu:~$ ls Final_Control_Work/
+HumanFriends.txt
+fcw@fcw-ubuntu:~$
