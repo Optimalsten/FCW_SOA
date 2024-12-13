@@ -5,10 +5,9 @@ import view.ConsoleView;
 import view.View;
 
 public class App {
-    /*
-    Основной метод приложения - обработка основных команд
-    (добавить животное, показать команды животного, удалить/выписать животное)
-    */
+
+    // Основной метод приложения - обработка основных команд
+    // (добавить животное, показать команды животного, удалить/выписать животное)
     public static void run() {
         NurseryAccounting nurseryAccounting = new NurseryAccounting(new NurseryStorage());
         View view = new ConsoleView(nurseryAccounting);

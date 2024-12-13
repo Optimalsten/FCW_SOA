@@ -68,7 +68,7 @@ public class ConsoleView implements View {
         printColorLine(menu, GREEN_COLOR);
         while (true) {
             try {
-                System.out.printf("%s (%d - %d): ", "Выберите действие (укажите число): ", MainMenuCommand.ADD_ANIMAL.ordinal(),
+                System.out.printf("%s (%d - %d): ", "Выберите действие, укажите число ", MainMenuCommand.ADD_ANIMAL.ordinal(),
                         MainMenuCommand.EXIT.ordinal());
                 scanner = new Scanner(System.in);
                 return MainMenuCommand.values()[scanner.nextInt()];

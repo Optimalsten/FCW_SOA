@@ -3,9 +3,8 @@ package view;
 import model.AbstractAnimal;
 
 public interface View {
-    /*
-    Основное меню
-    */
+
+    // Основное меню
     enum MainMenuCommand {
         ADD_ANIMAL ("Добавить животное"),
         SHOW_SKILLS("Смотреть команды"),
@@ -23,9 +22,7 @@ public interface View {
         }
     }
 
-    /*
-    Меню обучения командам
-    */
+    // Меню обучения командам
     enum AddSkillMenuCommand {
         ADD_SKILL ("Обучить команде"),
         EXIT ("Выйти");
@@ -41,48 +38,31 @@ public interface View {
         }
     }
 
-    /*
-    Список всех животных в питомнике
-    */
+    // Список всех животных в питомнике
     void showNurseryRegistry();
 
-    /*
-    Основное меню приложения
-    @return - возвращает выбранную команду
-    */
+    // Основное меню приложения (@return - возвращает выбранную команду)
     MainMenuCommand showMainMenuWithResult();
 
-    /*
-    Диалог добавления животного
-    @return возврат true при успешном добавлении, иначе возврат false
-    */
+    // Диалог добавления животного
+    // (@return - возврат true при успешном добавлении, иначе возврат false)
     boolean showAddAnimalDialog();
 
-    /*
-    Диалог выписки животного из питомника
-    @return возврат id выписанного животного или -1 при ошибке
-    */
+    // Диалог выписки животного из питомника
+    // (@return возврат id выписанного животного или -1 при ошибке)
     int showRemoveAnimalDialog();
 
-    /*
-    Диалог для представления информации о животном
-    */
+    // Диалог для представления информации о животном
     void showDetailInfoAnimalDialog();
 
-    /*
-    Информация о животном
-    */
+    // Информация о животном
     void showAnimalInfo(AbstractAnimal animal);
 
-    /*
-    Меню добавления команды
-    @return возврат выбранной команды
-    */
+    // Меню добавления команды
+    // (@return возврат выбранной команды)
     AddSkillMenuCommand showAddSkillMenu(AbstractAnimal animal);
 
-    /*
-    Диалог добавления команды
-    @return возврат true в при успешном добавлении, иначе возврат - false
-    */
+    // Диалог добавления команды
+    // (@return возврат true в при успешном добавлении, иначе возврат - false)
     boolean showAddSkillDialog(AbstractAnimal animal);
 }
