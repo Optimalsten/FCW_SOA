@@ -1,3 +1,11 @@
+### Общие данные
+// Штейнмиллер Олег Адольфович
+
+// Дата сдачи: 12.122024 
+
+// Группа № 6866
+
+
 ### Создание базы данных
 
 _Запуск mysql в терминале на Linux_
@@ -207,9 +215,9 @@ mysql> SELECT * FROM CombinePackAnimals;
 
 ```sh
 mysql> CREATE TABLE YoungAnimals AS
--> SELECT ID, Name, Type, BirthDay, Commands,TIMESTAMPDIFF(MONTH, BirthDate, CURDATE()) AS AgeMonths
+-> SELECT ID, Name, Type, BirthDay, Commands,TIMESTAMPDIFF(MONTH, BirthDay, CURDATE()) AS AgeMonths
 -> FROM PETS
--> WHERE TIMESTAMPDIFF(YEAR, BirthDate, CURDATE()) BETWEEN 1 AND 3;
+-> WHERE TIMESTAMPDIFF(YEAR, BirthDay, CURDATE()) BETWEEN 1 AND 3;
 ERROR 1146 (42S02): Table 'Human_Friends.PETS' doesn't exist
 mysql> CREATE TABLE YoungAnimals AS SELECT ID, Name, Type, BirthDay, Commands, TIMESTAMPDIFF(MONTH, BirthDay, CURDATE()) AS NumberMonths FROM Pets WHERE TIMESTAMPDIFF(YEAR, BirthDay, CURDATE()) BETWEEN 1 AND 3;
 Query OK, 2 rows affected (0,02 sec)

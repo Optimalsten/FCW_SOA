@@ -1,3 +1,8 @@
+// Штейнмиллер Олег Адольфович
+// Система учета для питомника животных (домашних и вьючных)
+// Группа № 6866
+
+
 fcw@fcw-ubuntu:~$ ls
 Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
 fcw@fcw-ubuntu:~$ cat > Pets.txt
